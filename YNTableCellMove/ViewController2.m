@@ -22,7 +22,7 @@
     for (NSInteger section = 0; section < 3; section ++) {
         NSMutableArray *sectionArray = [NSMutableArray new];
         for (NSInteger row = 0; row < 5; row ++) {
-            [sectionArray addObject:[NSString stringWithFormat:@"    第%ld组  %ld行", section, row]];
+            [sectionArray addObject:[NSString stringWithFormat:@"  训练%ld  第%ld组", section + 1, row]];
         }
         [_dataSource addObject:sectionArray];
     }
